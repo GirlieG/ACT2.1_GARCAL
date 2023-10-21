@@ -195,9 +195,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {tvmain.setText(tvmain.getText()+"^");}
         });
+
         bmod.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {tvmain.setText(tvmain.getText()+"mod");}
+            public void onClick(View v) {
+                tvmain.setText(tvmain.getText() + "%");
+            }
+        });
+        brec.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tvmain.setText(tvmain.getText() + "^" + "(-1)");
+            }
         });
         bb2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -228,10 +237,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //modulo function
-    int divisor = 0;
-    int quotient = 0;
-    int remainder =0;
-    int dividend = (divisor * quotient) + remainder;
+
 
 
     //modulo function
