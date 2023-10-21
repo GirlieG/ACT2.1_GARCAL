@@ -178,7 +178,7 @@ public class MainActivity extends AppCompatActivity {
         bron.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                tvmain.setText(tvmain.getText()+"ⁿ√x");
+                tvmain.setText(tvmain.getText()+"√");
             }
         });
         bpon.setOnClickListener(new View.OnClickListener() {
@@ -236,11 +236,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    //modulo function
-
-
-
-    //modulo function
     public static double eval(final String str) {
         double parse = new Object() {
             int pos = -1, ch;
